@@ -1,0 +1,11 @@
+localhost:9080 {
+  route /test {
+    cronjob @every 1s echo "Hello, world!"
+    respond "Hello, default!"
+  }
+
+  route /xpto {
+    cronjob @every 10s echo "Hello, world!"
+    respond "Hello, default!"
+  }
+}
